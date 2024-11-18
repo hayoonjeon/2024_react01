@@ -1,11 +1,13 @@
 // import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header';
-import Main from './components/Main';
-import Footer from './components/Footer';
-import Courseitem from './components/course/Courseitem';
-import CourseListCard from './components/course/CourseListCard';
+// import Header from './components/Header';
+// import Main from './components/Main';
+// import Footer from './components/Footer';
+// import Courseitem from './components/course/Courseitem';
+// import CourseListCard from './components/course/CourseListCard';
+import Library from './components/step01/Library';
 
+// 1단계 
 // function Header() {
 //   return(
 //     <header>
@@ -39,7 +41,9 @@ import CourseListCard from './components/course/CourseListCard';
 // 리액트에선 class는 예약어이기때문에 사용못하고 
 // className 사용
 function App() {
+
   return (
+    // 2단계 
     // <main>
     //   <div className="card">
     //     <div className="card__header">강의 목록</div>
@@ -53,9 +57,19 @@ function App() {
     //   </div>
     // </main>
 
-    <main>
-      <CourseListCard/>
-    </main>
+    // 3단계
+    // <main>
+    //   <CourseListCard/>
+    // </main>
+    <div className='App'>
+      <main >
+
+        <Library />
+
+      </main>
+    </div>
+
+
 
   );
 }
