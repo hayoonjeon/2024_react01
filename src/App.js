@@ -9,6 +9,7 @@ import './App.css';
 import CourseListCard from './components/step04/CourseListCard';
 // import Library from './components/step01/Library';
 import Profile from './components/step02/Profile';
+import PackingList from './components/step05/PackingList';
 
 
 function App() {
@@ -30,13 +31,16 @@ function App() {
       image: './img/tree-3.jpg',
     }
   ]
- 
+ //조건부렌더링 : if, &&, 삼항연산자( 조건식? 참 : 거짓)
   const ischk = false;
   return (
     
     <div className='App'>
        {ischk ? <h1>Hello, react </h1> : <CourseListCard items={items}/>}
+    <hr/>
+    <PackingList/>
     </div>
+
 
 
 
